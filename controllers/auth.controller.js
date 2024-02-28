@@ -1,8 +1,8 @@
-import User from "../backend/models/user.model";
+// import User from "../backend/models/user.model";
 
 export const signup = async (req, res) => {
   try {
-    const { fullname, username, password, confirmpassword, gender } = req.body;
+    const { fullName, username, password, confirmpassword, gender } = req.body;
 
     if (pasword !== confirmpassword) {
       return res.status(400).json({ error: "Password don't match" });
